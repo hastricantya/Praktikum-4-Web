@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title untuk memberi judul pada jendela browser -->
+	<title>Memahami Events</title>
+	<!-- Memasukkan file jquery -->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<!-- Membuat script berisi perintah berupa function untuk class a dengan membuat events seperti alert -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$("a").click(function(){
+		alert("Selamat Datang di Blogspot Hastri Cantya Danahiswari");	
+		});	
+		});
+	</script>
+	<!-- Membuat css pada halaman html -->
+	<style type="text/css">
+		*{
+			font-size: 30px;
+			font-family: verdana;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<!-- Memasukkan span link yang diberi perintah oleh script selector tag bernama a -->
+	<a href="http://hastricantya.blogspot.com">Klik Disini Untuk Membuka Website Hastri Cantya Danahiswari</a>
+</body>
+</html>

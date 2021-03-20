@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Title untuk memberi judul pada jendela browser -->
+  <title>Tugas 3</title>
+  <!-- Memasukkan file jquery -->
+  <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+  <!-- Membuat script berisi perintah berupa function untuk selector id fadeout -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $("#fadeout").click(function(){
+      $("#box").fadeOut("slow");
+    }); 
+      });
+    </script>
+    <!-- Membuat script berisi perintah berupa function untuk selector id fadein -->
+     <script type="text/javascript">
+    $(document).ready(function(){
+    $("#fadein").click(function(){
+      $("#box").fadeIn("slow");
+    }); 
+  });
+  </script>
+  <!-- Membuat script berisi perintah berupa function untuk selector id fadeout3 -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#fadeout3").click(function(){
+      $("#box").fadeOut("slow", 0,3);
+    }); 
+    });
+  </script>
+  <!-- Membuat css pada selector id -->
+  <style type="text/css">
+    #box{
+      background: yellow;
+      width: 95px;
+      height: 95px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Memanggil id box -->
+  <div id="box"></div>
+  <br><br>
+  <!-- Membuat button fade out -->
+  <button id= "fadeout">Fade Out</button>
+  <!-- Membuat button fade in -->
+  <button id="fadein">Fade In</button>
+  <!-- Membuat button fade out 0.3 -->
+  <button id= "fadeout3">Fade Out 0.3</button>
+</body>
+</html>

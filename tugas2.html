@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title untuk memberi judul pada jendela browser -->
+	<title>Tugas 2</title>
+	<!-- Memasukkan file jquery -->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<!-- Membuat script berisi perintah berupa function untuk selector tag divdan memberi perintah css agar background menjadi red ketika doubleclick -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$("div").dblclick(function(){	
+		$(this).css({background: "red"});
+		});
+		});
+	</script>
+	<!-- Membuat css pada selector div -->
+	<style type="text/css">
+		div{
+			background: yellow;
+			width: 95px;
+			height: 95px;
+			float: left;
+			margin: 25px;
+		}
+	</style>
+</head>
+<body>
+	<!-- membuat paragraf-->
+	<p>Klik 2x Pada Setiap Kotak Untuk Merubah Warnanya</p>
+	<!--Memanggil class div sebanyak 4 kali-->
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

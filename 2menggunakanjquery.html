@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title untuk memberi judul pada jendela browser -->
+	<title>Menggunakan jQuery</title>
+	<!-- Memasukkan file jquery -->
+	<script src="jquery-3.6.0.min.js"></script>
+	<!-- Membuat script berisi perintah berupa function dengan selector -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$(".sembunyi").click(function() {$("#foto").hide("slow")});
+		$(".tampil").click(function() {$("#foto").show("slow")});
+		});
+	</script>
+</head>
+<body>
+	<!-- membuat button yang fungsinya dan akan menjalankan berdasarkan class masing-masing -->
+	<button class="sembunyi">Sembunyikan</button>
+	<button class="tampil">tampilkan</button>
+	<!-- Memasukkan foto -->
+	<p><img id="foto" src="foto1.jpeg" width="300" height="400"></p>
+</body>
+</html>

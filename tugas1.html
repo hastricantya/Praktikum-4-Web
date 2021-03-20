@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title untuk memberi judul pada jendela browser -->
+	<title>Tugas 1</title>
+	<!-- Memasukkan file jquery -->
+	<script src="jquery-3.6.0.min.js"></script>
+	<!-- Membuat script berisi perintah berupa function untuk setiap selector untuk foto1-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$(".sembunyi1").click(function() {$("#foto1").hide("slow")});
+		$(".tampil1").click(function() {$("#foto1").show("slow")});
+		});
+	</script>
+	<!-- Membuat script berisi perintah berupa function untuk setiap selector untuk foto2-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$(".sembunyi2").click(function() {$("#foto2").hide("slow")});
+		$(".tampil2").click(function() {$("#foto2").show("slow")});
+		});
+	</script>
+	<!-- Membuat script berisi perintah berupa function untuk setiap selector untuk foto3-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$(".sembunyi3").click(function() {$("#foto3").hide("slow")});
+		$(".tampil3").click(function() {$("#foto3").show("slow")});
+		});
+	</script>
+</head>
+<body>
+	<!-- Membuat button dan memanggil perintah pada class yang telah diberi fungsi pada script -->
+	<button class="sembunyi1">Sembunyikan</button>
+	<button class="tampil1">tampilkan</button>
+	<!-- Memasukkan foto -->
+	<p><img id="foto1" src="foto1.jpeg" width="125" height="180"></p>
+	<!-- Membuat button dan memanggil perintah pada class yang telah diberi fungsi pada script -->
+	<button class="sembunyi2">Sembunyikan</button>
+	<button class="tampil2">tampilkan</button>
+	<!-- Memasukkan foto -->
+	<p><img id="foto2" src="foto2.jpg" width="125" height="180"></p>
+	<!-- Membuat button dan memanggil perintah pada class yang telah diberi fungsi pada script -->
+	<button class="sembunyi3">Sembunyikan</button>
+	<button class="tampil3">tampilkan</button>
+	<!-- Memasukkan foto -->
+	<p><img id="foto3" src="foto3.jpg" width="125" height="130"></p>
+</body>
+</html>

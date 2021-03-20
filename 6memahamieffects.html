@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title untuk memberi judul pada jendela browser -->
+	<title>Memahami Effects</title>
+	<!-- Memasukkan file jquery -->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<!-- Membuat script berisi perintah berupa function untuk selector id kotak seperti effects -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	setTimeout(function(){
+	$("#kotak").fadeOut("slow",function(){
+	$("#kotak").remove();
+	});	
+	}, 5000);
+	});
+	</script>
+	<!-- Membuat script berisi perintah berupa function untuk selector id nungguin seperti effects -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	setTimeout(function(){
+	$("#nungguin").fadeOut("slow",function(){
+	$("#nungguin").remove();
+	});	
+	}, 4000);
+	});
+	</script>
+	<!-- Membuat script berisi perintah berupa function untuk selector id tiga seperti effects -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	setTimeout(function(){
+	$("#tiga").fadeOut("slow",function(){
+	$("#tiga").remove();
+	});	
+	}, 3000);
+	});
+	</script>
+	<!-- Membuat script berisi perintah berupa function untuk selector id dua seperti effects -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	setTimeout(function(){
+	$("#dua").fadeOut("slow",function(){
+	$("#dua").remove();
+	});	
+	}, 2000);
+	});
+	</script>
+	<!-- Membuat script berisi perintah berupa function untuk selector id satu seperti effects -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	setTimeout(function(){
+	$("#satu").fadeOut("slow",function(){
+	$("#satu").remove();
+	});	
+	}, 1000);
+	});
+	</script>
+	<!-- Membuat css pada halaman html -->
+	<style type="text/css">
+		*{
+			background-color: skyblue;
+		}
+		/*Mendesain id kotak dengan css seperti panjang, lebar, warna background, border, padding*/
+		#kotak {
+		width: 300px;
+		height: 50px;
+		background: antiquewhite;
+		border: 1px solid black;
+		padding: 5px;	
+		}
+	</style>
+</head>
+<body>
+	<!-- Memanggil id kotak yang berisi paragraf -->
+	<p id="kotak">Perhatikan baik - baik teks ini, karena teks ini akan hilang dalam hitungan 5 detik</p>
+	<!-- Memanggil id nungguin yang berisi h4 berupa Nungguin Ya? -->
+	<h4 id="nungguin">Nungguin Ya?</h4>
+	<!-- Memanggil id tiga yang berisi h4 berupa tulisan 3... -->
+	<h4 id="tiga">3...</h4>
+	<!-- Memanggil id dua yang berisi h4 berupa tulisan 2... -->
+	<h4 id="dua">2...</h4>
+	<!-- Memanggil id satu yang berisi h4 berupa tulisan 1... -->
+	<h4 id="satu">1...</h4>
+</body>
+</html>
